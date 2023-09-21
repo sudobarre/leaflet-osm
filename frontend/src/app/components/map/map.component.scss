@@ -1,0 +1,16 @@
+
+.map {
+  height: 100vh;
+  z-index: 0;
+}
+.locate-button {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  z-index: 1000;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
