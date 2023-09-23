@@ -6,7 +6,7 @@ import { BehaviorSubject, Observable } from 'rxjs';
 })
 export class LocationService {
   //Default location: Obelisco de Buenos Aires
-  private userLocationSubject: BehaviorSubject<any> = new BehaviorSubject<any>({ lat: -34.603773, lng: -58.381594 });
+  private userLocationSubject: BehaviorSubject<any> = new BehaviorSubject<any>(null);
   public userLocation$: Observable<any> = this.userLocationSubject.asObservable();
 
   constructor() {

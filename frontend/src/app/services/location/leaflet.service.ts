@@ -5,14 +5,7 @@ import * as Leaflet from 'leaflet';
   providedIn: 'root'
 })
 export class LeafletService {
-  private circles: Leaflet.Circle[] = [
-    Leaflet.circle([-34.603773, -58.381594], {
-      radius: 50,
-      fillColor: 'blue',
-      fillOpacity: 0.2,
-      color: 'blue',
-    })
-  ];
+  private circles: Leaflet.Circle[] = [];
 
   constructor() { }
 
@@ -27,7 +20,7 @@ export class LeafletService {
           iconAnchor: [13, 41],
           iconUrl: 'assets/blue-marker.svg',
         }),
-        title: 'Workspace'
+        title: 'Fede'
       } as Leaflet.MarkerOptions),
       new Leaflet.Marker(new Leaflet.LatLng(-34.590636, -58.384598), {
         icon: new Leaflet.Icon({
@@ -35,7 +28,15 @@ export class LeafletService {
           iconAnchor: [13, 41],
           iconUrl: 'assets/red-marker.svg',
         }),
-        title: 'Riva'
+        title: 'A'
+      } as Leaflet.MarkerOptions),
+      new Leaflet.Marker(new Leaflet.LatLng(38.03035557903951, 46.36413997942148), {
+        icon: new Leaflet.Icon({
+          iconSize: [50, 41],
+          iconAnchor: [13, 41],
+          iconUrl: 'assets/red-marker.svg',
+        }),
+        title: 'Aysan'
       } as Leaflet.MarkerOptions),
     ] as Leaflet.Marker[];
   };

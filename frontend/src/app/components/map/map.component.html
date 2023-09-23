@@ -2,7 +2,9 @@
      leaflet
      [leafletOptions]="options"
      [leafletCenter]="center"
+     [leafletLayersControl]="layersControl"
+     [leafletLayers]="layers"
+     (leafletMapReady)="onMapReady($event)"
      >
 </div>
-
 <button class="locate-button" (click)="locateUser()">Locate Me</button>
